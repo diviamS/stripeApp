@@ -1,0 +1,48 @@
+$primary: #002395;
+$secondary: #ec1920;
+$primaryDark: #051440;
+$danger: #cc0001;
+$white: #fff;
+$green: #00950f;
+$lightGray: #e5e5ea;
+$titleColor: #051440;
+$borderColor: #c4c4c4;
+$textColor: #64607d;
+$grayBg: #fafafa;
+$footerColor: #000d34;
+$newGray: #64607d;
+$borderLight: #e2e8f0;
+$chatBackground: #002395;
+
+/**** btn width ******/
+$btnwidth: 125px;
+
+/********* Font sizes ********/
+$fontSize-14: 14px;
+$fontSize-16: 16px;
+$fontSize-18: 18px;
+$fontSize-20: 20px;
+$fontSize-24: 24px;
+$fontSize-28: 28px;
+
+@mixin min($value) {
+  @media screen and (min-width: ($value + "px")) {
+    @content;
+  }
+}
+
+@mixin max($value) {
+  @media screen and (max-width: ($value + "px")) {
+    @content;
+  }
+}
+
+@mixin minMax($min, $max) {
+  @media (min-width: ($min + "px")) and (max-width: ($max + "px")) {
+    @content;
+  }
+}
+
+@mixin cardShadow {
+  box-shadow: 0px 4px 20px rgba(193, 197, 210, 0.4);
+}
