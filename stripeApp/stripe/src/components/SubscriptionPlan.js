@@ -40,7 +40,7 @@ const SubscriptionPlan = () => {
     //  get stripe or its instance  //
     // const stripe = await getStripe();
     const stripe = await stripePromise
-    // pass checkout Options //
+    // redirect To Checkout and pass checkout Options //
     const { error } = await stripe.redirectToCheckout(checkoutOptions);
     console.log("Stripe checkout error", error);
 

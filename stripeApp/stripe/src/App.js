@@ -7,6 +7,7 @@ import SubscriptionPlan from "./components/SubscriptionPlan";
 import SimplePayement from "./components/SimplePayement";
 import Completion from "./components/checkout/Completion";
 import CaptureAndPayLater from "./components/CaptureAndPayLater";
+import SplitPayement from "./components/SplitPayement";
 
 function App() {
   const [stripePromise, setStripePromise] = useState(null);
@@ -26,7 +27,7 @@ function App() {
           <Route path="/completion" element={<Completion />} />
           <Route path="/subscriptionplan" element={<SubscriptionPlan />} />
           <Route path="/capture" element={<CaptureAndPayLater />} />
-          <Route path="/splitpayement" element={<CaptureAndPayLater />} />
+          <Route path="/payemensplit" element={<SplitPayement />} />
         </Routes>
     </div>
     </Elements>
